@@ -1,0 +1,293 @@
+*  #root {
+  max-width: 1280px;
+  margin: 0; 
+  padding: 0; 
+  text-align: left;
+  background-color: #1b1b1b;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; 
+  width: 100%;
+  padding-top: 12px;
+}
+
+.userLogin, .social {
+  display: flex;
+  align-items: center; 
+}
+.userLogin{
+  margin-left: 130px;
+}
+.social{
+  margin-right: 30px;
+}
+.userLogin img{
+  filter: invert(1);
+}
+
+.userLogin img, .social img {
+  height: 20px; 
+  width: 20px;  
+  margin-right: 10px;
+}
+
+.vertical-line {
+  height: 20px;
+  width: 2px;
+  background-color: #ffffff; 
+}
+.social .vertical-line{
+  background-color: yellow;
+}
+a {
+  margin-right: 10px; 
+  font-size: 10px;
+}
+.nav {
+  background-color: #1b1b1b; 
+  padding: 10px 0;
+}
+
+.nav-ul {
+  list-style-type: none;  
+  display: flex;  
+  justify-content: space-around;  
+  align-items: center;  
+  padding: 0;  
+  gap: 0px;
+}
+
+.nav-li {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 14px;
+
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box {
+  padding: 10px 40px 10px 10px;
+  border: 2px solid white;
+  background-color: black;
+  color: yellow;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 290px;
+}
+
+.search-box:focus {
+  border-color: yellow;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  fill: yellow; 
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.parent-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border: 1px solid white;
+  padding: 10px;
+  width: 100%; 
+  max-width: 750px; 
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.head-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  background-color:#FCBF19;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid white;
+  margin: 0;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+
+.left-content a{
+  color: black;
+}
+.left-content .vertical-line{
+  background-color: black;
+}
+
+.numbers {
+  display: flex;
+  gap: 5px; 
+}
+.numbers a{
+  font-size: 12px;
+  color: black;
+}
+ .naruto {
+  width: auto; 
+  height: 20px;
+} 
+
+.release {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.head-line a:hover{
+  color: gray;
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: space-around;
+  margin-top: 20px; 
+}
+
+.card {
+  width: calc(25% - 20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 5px; 
+  transition: transform 0.3s; 
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+}
+
+.anime-img {
+  width: 100%;
+  position: relative;
+}
+
+.anime {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block; 
+}
+
+.details {
+  padding: 10px; 
+  background-color: transparent;
+  box-shadow: none;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FCBF19;
+}
+.title:hover{
+  color: #fff;
+}
+
+.ep {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #fff; 
+}
+.side-bar{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+ 
+}
+.horizontal-line{
+  height: 2px;
+  width: 80%;
+  background-color: #fff;
+  margin: auto;
+}
+.sasuke{
+  height: 22px;
+  width: auto;
+  transform: scale(1.4);  
+  transform-origin: center; 
+  padding-right: 10px;
+}
+.side-bar .head-line{
+  justify-content: flex-start;
+  margin-left: 40px;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 340px;
+  padding-left: 20px;
+ 
+}
+.side-bar .head-line a{
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.side-bar .head-line .vertical-line{
+  background-color: black;
+}
+.anime-title{
+  color: #FCBF19;
+  font-size:13px;
+  margin-bottom: 2px;
+}
+.anime-ep{
+  color: #fff;
+  font-size: 10px;
+}
+.list-anime ol {
+  counter-reset: li;  
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.list-anime li {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.list-anime li:before {
+  content: counter(li);  
+  counter-increment: li;  
+  position: absolute; 
+  left: 10px; 
+  font-size: 13px;  
+  line-height: 1.5; 
+  color: #FCBF19;
+}
+
+.list-anime{
+  margin-left: 15px;
+}
